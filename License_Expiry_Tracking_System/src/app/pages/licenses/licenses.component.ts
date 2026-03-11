@@ -10,7 +10,7 @@ import { Router, ActivatedRoute } from '@angular/router';
       <div class="header-actions">
         <div>
           <h1 class="page-title">Licenses</h1>
-          <p class="page-subtitle">Manage all your software subscriptions in one place.</p>
+
         </div>
         <button (click)="addLicense()" class="btn-primary">
           <span class="icon">+</span> Add New License
@@ -137,9 +137,8 @@ export class LicensesComponent implements OnInit {
     if (this.statusFilter) filters.status = this.statusFilter;
 
     this.licenseService.getLicenses(filters).subscribe(data => {
-      // Create a fresh array reference to ensure Angular updates the view immediately
       this.licenses = data ? [...data] : [];
-      this.cdr.detectChanges(); // Check for view drift explicitly!
+      this.cdr.detectChanges();
     });
   }
 

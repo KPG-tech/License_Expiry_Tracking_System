@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
       <div class="page-header">
         <div>
           <h1 class="page-title">Dashboard Overview</h1>
-          <p class="page-subtitle">Track and manage your software licenses.</p>
+         
         </div>
       </div>
       
@@ -69,7 +69,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     this.licenseService.getStats().subscribe(data => {
       this.stats = data;
-      this.cdr.detectChanges(); // Check for view drift explicitly!
+      this.cdr.detectChanges(); 
     });
   }
 
