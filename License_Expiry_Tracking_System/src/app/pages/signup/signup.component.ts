@@ -9,7 +9,6 @@ import { AuthService } from '../../services/auth.service';
     <div class="signup-container">
       <div class="signup-card">
         <div class="text-center mb-6">
-          <div class="brand-logo">🎟️</div>
           <h1 class="system-title">License Expiry Tracking System</h1>
           <h2 class="title mt-4">Create an Account</h2>
           <p class="subtitle">Join us to start tracking your licenses.</p>
