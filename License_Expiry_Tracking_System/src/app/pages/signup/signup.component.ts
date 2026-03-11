@@ -9,7 +9,9 @@ import { AuthService } from '../../services/auth.service';
     <div class="signup-container">
       <div class="signup-card">
         <div class="text-center mb-6">
-          <h2 class="title">Create an Account</h2>
+          <div class="brand-logo">🎟️</div>
+          <h1 class="system-title">License Expiry Tracking System</h1>
+          <h2 class="title mt-4">Create an Account</h2>
           <p class="subtitle">Join us to start tracking your licenses.</p>
         </div>
         <form (ngSubmit)="onSubmit()">
@@ -40,10 +42,13 @@ import { AuthService } from '../../services/auth.service';
     </div>
   `,
   styles: [`
-    .signup-container { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: linear-gradient(135deg, #f0fdf4 0%, #e0e7ff 100%); padding: 2rem; }
-    .signup-card { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); width: 100%; max-width: 400px; }
+    .signup-container { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: linear-gradient(135deg, #f0fdf4 0%, #e0e7ff 100%); padding: 1rem; }
+    .signup-card { background: white; padding: 3rem 2.5rem; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); width: 100%; max-width: 420px; }
     .text-center { text-align: center; }
-    .mb-6 { margin-bottom: 2rem; }
+    .mb-6 { margin-bottom: 2.5rem; }
+    .mt-4 { margin-top: 1rem; }
+    .brand-logo { font-size: 3rem; margin-bottom: 0.5rem; }
+    .system-title { font-size: 1.35rem; font-weight: 700; color: #10b981; margin: 0; text-transform: uppercase; letter-spacing: 0.05em; line-height: 1.3; }
     .title { font-size: 1.75rem; font-weight: 700; color: #111827; margin-bottom: 0.5rem; }
     .subtitle { color: #6b7280; font-size: 0.95rem; margin: 0; }
     .form-group { margin-bottom: 1.5rem; }
