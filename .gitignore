@@ -1,0 +1,7 @@
+node_modules/
+.env
+dist/
+/backend/node_modules/
+/License_Expiry_Tracking_System/node_modules/
+/License_Expiry_Tracking_System/dist/
+.angular/
