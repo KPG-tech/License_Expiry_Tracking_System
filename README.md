@@ -10,4 +10,9 @@ Assignment of Yoors
 
 
 backend run -- npm run dev
+
+
+
+
+
 frontend run -- ng serve
